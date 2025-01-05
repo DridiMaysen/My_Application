@@ -41,44 +41,56 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         tools:context=".MapsActivity" />
+
     <RelativeLayout
         android:id="@+id/second_relative_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageButton
+            android:id="@+id/hospitals_nearby"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/hospitals_nearby"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:layout_marginLeft="67dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
             android:onClick="onclick"
 
-            android:src="@drawable/hospital"
-            />
+            android:src="@drawable/hospital" />
+
         <ImageButton
+            android:id="@+id/pharmacy_nearby"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/pharmacy_nearby"
             android:layout_alignParentBottom="true"
             android:layout_toEndOf="@id/hospitals_nearby"
-            android:src="@drawable/pharmacy"
             android:onClick="onclick"
+            android:src="@drawable/pharmacy"
+
+            />
+
+        <ImageButton
+            android:id="@+id/clinic_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/pharmacy_nearby"
+            android:onClick="onclick"
+            android:src="@drawable/clinic"
 
             />
         <ImageButton
+            android:id="@+id/homee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/clinic_nearby"
+            android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_toEndOf="@id/pharmacy_nearby"
-            android:src="@drawable/clinic"
+            android:layout_marginLeft="290dp"
             android:onClick="onclick"
 
-            />
+            android:src="@drawable/home" />
 
     </RelativeLayout>
-
 
 
 </RelativeLayout>

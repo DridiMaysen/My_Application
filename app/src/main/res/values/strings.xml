@@ -2,4 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="login_string">Already have an account? <b>Login here</b></string>
+    <string name="open">Open navigation Drawer</string>
+    <string name="close">Close navigation Drawer</string>
+
 </resources>

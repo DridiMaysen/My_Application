@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -20,6 +21,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.myapplication.Activity.ForgetActivity;
+import com.example.myapplication.Activity.MainActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -146,6 +149,11 @@ public class MapsActivity extends FragmentActivity implements
                 Toast.makeText(this, "Searching for Nearby Pharmacy ...", Toast.LENGTH_SHORT).show();
                 Toast.makeText(this, "Schowing Nearby Pharmacy ...", Toast.LENGTH_SHORT).show();
                 }
+        if (v.getId()==R.id.homee){
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
 
 

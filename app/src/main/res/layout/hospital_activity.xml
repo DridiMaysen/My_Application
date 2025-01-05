@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+        <ImageButton
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/quantum_ic_arrow_back_grey600_24" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/hospitalbac" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Hospital Name" />
+
+        <EditText
+            android:id="@+id/localisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:hint="Hospital Localisation"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minHeight="150dp" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="Time" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="140dp"
+            android:layout_marginTop="10dp"
+            android:onClick="add"
+            android:text="Add"
+            android:backgroundTint="#D00F0F"/>
+
+        <Button
+            android:id="@+id/showlist"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="110dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:onClick="list"
+            android:text="show List" />
+
+
+    </LinearLayout>
+</LinearLayout>

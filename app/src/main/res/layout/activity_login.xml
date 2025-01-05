@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_700"
+    android:background="@color/black"
     tools:context=".Activity.LoginActivity"
-    android:id="@+id/main"
-    >
+    android:id="@+id/main">
 
     <ImageView
         android:layout_width="match_parent"
@@ -45,35 +44,45 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/edtEmail"
+            <!-- Email EditText wrapped in TextInputLayout -->
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
-                android:backgroundTint="@color/white"
+                android:layout_marginTop="16dp">
 
-                android:drawableStart="@drawable/ic_email"
-                android:drawablePadding="10dp"
-                android:drawableTint="@color/white"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:textColor="@color/white" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEmaill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/black"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
-                android:id="@+id/edtPassword"
+            <!-- Password EditText wrapped in TextInputLayout -->
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/white"
-                android:drawableStart="@drawable/ic_lock"
-                android:drawablePadding="10dp"
-                android:drawableTint="@color/white"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:textColor="@color/white" />
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPasswordd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/black"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/txtForgetPassword"
@@ -84,6 +93,15 @@
                 android:text="Forget password?"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"/>
 
 
             <com.google.android.material.button.MaterialButton
