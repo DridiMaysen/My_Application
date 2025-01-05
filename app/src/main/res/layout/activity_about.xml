@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_marginTop="70dp">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp">
+        <ImageButton
+            android:id="@+id/backk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/quantum_ic_arrow_back_grey600_24" />
+
+
+        <!-- App Title -->
+
+        <!-- Introduction Section -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="About Near Me Application"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/introText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="At [App Name], we know that emergencies don't happen on a schedule. Our app is designed to help you find the nearest urgent care centers and emergency services, ensuring you get the help you need fast."
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="12dp" />
+
+        <!-- How It Works Section -->
+        <TextView
+            android:id="@+id/howItWorksTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How It Works"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/howItWorksDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Search for Nearby Urgent Care: Instantly locate urgent care centers, hospitals, and medical facilities near you.\n- View Important Info: Access essential details like contact information, wait times, and available services.\n- 24/7 Access: Emergency care at your fingertips, any time of day or night."
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="12dp" />
+
+
+
+        <!-- Download Now Section -->
+        <TextView
+            android:id="@+id/downloadTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download Now"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/downloadDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay prepared and keep Near Me  on hand for whenever you need it. Emergency care is just a tap away!"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="12dp" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
