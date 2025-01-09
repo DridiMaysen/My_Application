@@ -22,9 +22,7 @@
             app:srcCompat="@drawable/quantum_ic_arrow_back_grey600_24" />
 
 
-        <!-- App Title -->
 
-        <!-- Introduction Section -->
         <TextView
             android:id="@+id/appTitle"
             android:layout_width="match_parent"
@@ -32,7 +30,7 @@
             android:gravity="center"
             android:paddingBottom="10dp"
             android:text="About Near Me Application"
-            android:textColor="#000000"
+            android:textColor="#F44336"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"/>
@@ -41,7 +39,7 @@
             android:id="@+id/introText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="At [App Name], we know that emergencies don't happen on a schedule. Our app is designed to help you find the nearest urgent care centers and emergency services, ensuring you get the help you need fast."
+            android:text="At Near Me, we know that emergencies don't happen on a schedule. Our app is designed to help you find the nearest urgent care centers and emergency services, ensuring you get the help you need fast."
             android:textSize="16sp"
             android:textColor="#333333"
             android:lineSpacingExtra="4dp"
@@ -56,7 +54,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:paddingBottom="8dp"
-            android:textColor="#000000" />
+            android:textColor="#3F51B5" />
 
         <TextView
             android:id="@+id/howItWorksDescription"
@@ -79,7 +77,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:paddingBottom="8dp"
-            android:textColor="#000000" />
+            android:textColor="#3F51B5" />
 
         <TextView
             android:id="@+id/downloadDescription"

@@ -116,9 +116,7 @@ public class signUpActivity extends AppCompatActivity {
 
 
 
-        binding.btnBack.setOnClickListener(view -> {
-            onBackPressed();
-        });
+
 
 
     }
@@ -155,7 +153,7 @@ public class signUpActivity extends AppCompatActivity {
                 editTextPassword.requestFocus();
                 return;
             }
-            if (phone.length() < 8) {
+            if (phone.length() !=8) {
                 edtphone.setError("Phone number should contain at leat 8 numbers");
                 edtphone.requestFocus();
                 return;

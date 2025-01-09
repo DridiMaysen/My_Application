@@ -39,7 +39,8 @@
             android:exported="false" />
         <activity
             android:name=".Activity.signUpActivity"
-            android:exported="false" />
+            android:exported="false"
+           />
         <activity
             android:name=".Activity.LoginActivity"
             android:exported="false" />

@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.myapplication.MapsActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.Utility.LoadingDialog;
 import com.example.myapplication.databinding.ActivityLoginBinding;
@@ -116,11 +118,14 @@ public class LoginActivity extends AppCompatActivity {
                     String password = String.valueOf(dataSnapshot.child("password").getValue());
                     String phone = String.valueOf(dataSnapshot.child("phone").getValue());
 
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    intent.putExtra("userName", user);
-                    intent.putExtra("email", emailVal);
-                    intent.putExtra("password", password);
-                    intent.putExtra("phone", phone);
+                    // Intent pour envoyer les données à MainActivity
+                    Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                    mainIntent.putExtra("userName", user);
+                    mainIntent.putExtra("email", emailVal);
+                    mainIntent.putExtra("password", password);
+                    mainIntent.putExtra("phone", phone);
+
+                    // Storing user data in SharedPreferences
                     SharedPreferences sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("userName", user);
@@ -129,10 +134,22 @@ public class LoginActivity extends AppCompatActivity {
                     editor.putString("phone", phone);
                     editor.apply();
 
-                    startActivity(intent);
+                    // Lancer MapsActivity, mais envoyer les données à MainActivity
+                    Intent mapsIntent = new Intent(LoginActivity.this, MapsActivity.class);
+                    mapsIntent.putExtra("userName", user);
+                    mapsIntent.putExtra("email", emailVal);
+                    mapsIntent.putExtra("password", password);
+                    mapsIntent.putExtra("phone", phone);
+
+                    // Démarrer MapsActivity
+                    startActivity(mapsIntent);
+
+                    // Si vous voulez fermer LoginActivity après avoir lancé MapsActivity
                     finish();
                 }
             }
         });
     }
+
 }
+

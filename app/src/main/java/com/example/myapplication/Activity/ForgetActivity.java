@@ -10,9 +10,12 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myapplication.MapsActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.ActivityForgetBinding;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -25,6 +28,7 @@ public class ForgetActivity extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth auth;
     String strEmail;
+    TextView textView;
 
 
     private ActivityForgetBinding binding;
@@ -39,12 +43,14 @@ public class ForgetActivity extends AppCompatActivity {
         reset=findViewById(R.id.btnForgetPassword);
         edtEmail=findViewById(R.id.edtEmailf);
         progressBar=findViewById(R.id.progress);
+
         auth=FirebaseAuth.getInstance();
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                  strEmail= edtEmail.getText().toString().trim();
                 if (! TextUtils.isEmpty(strEmail)){
+
                     resetPassword();
 
                 }else {
@@ -53,12 +59,19 @@ public class ForgetActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
-        binding.btnBack.setOnClickListener(view -> {
-            onBackPressed();
+        textView=findViewById(R.id.txtLogin);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
         });
+
+
+
+
 
 
     }

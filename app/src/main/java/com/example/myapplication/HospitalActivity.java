@@ -29,7 +29,7 @@ public class HospitalActivity extends AppCompatActivity {
     ProgressDialog pd;
     FirebaseFirestore db;
     String pid, pname, plocation, ptime;
-    ImageButton btnBack;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,15 +42,8 @@ public class HospitalActivity extends AppCompatActivity {
         mTimeEt = findViewById(R.id.time);
         mList = findViewById(R.id.showlist);
         mAdd = findViewById(R.id.add);  // Initialize mAdd Button before usage
-        btnBack=findViewById(R.id.Back);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
+
 
         // Set up ActionBar title
         ActionBar actionBar = getSupportActionBar();

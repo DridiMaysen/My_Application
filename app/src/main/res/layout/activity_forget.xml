@@ -14,14 +14,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/signup" />
 
-    <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="45dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="0dp"
-        android:src="@drawable/backk"
-        app:tint="@color/white" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +46,8 @@
             android:text="Reset Password"
             android:textStyle="bold"
             app:cornerRadius="20dp"
-            app:elevation="10dp" />
+            app:elevation="10dp"
+            android:backgroundTint="#FFC100"/>
 
         <ProgressBar
             android:id="@+id/progress"
@@ -62,8 +56,19 @@
             android:layout_marginHorizontal="150dp"
             android:layout_marginTop="10dp"
             android:padding="15dp"
+            android:visibility="gone"
 
             />
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/forget_string"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
     </LinearLayout>
 
 
