@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Clinic Name Input -->
+    <EditText
+        android:id="@+id/clinicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Clinic Name"
+        android:textSize="18sp" />
+
+    <!-- Clinic Location Input -->
+    <EditText
+        android:id="@+id/clinicLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Clinic Location"
+        android:textSize="18sp"
+        android:layout_below="@id/clinicName"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Clinic Operating Time Input -->
+    <EditText
+        android:id="@+id/clinicTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Operating Time"
+        android:textSize="18sp"
+        android:layout_below="@id/clinicLocation"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Add Clinic or Update Button -->
+    <Button
+        android:id="@+id/addOrUpdateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Clinic"
+        android:layout_below="@id/clinicTime"
+        android:layout_marginTop="20dp"/>
+
+    <!-- View Clinics Button -->
+    <Button
+        android:id="@+id/showClinicsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Clinic List"
+        android:layout_below="@id/addOrUpdateBtn"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

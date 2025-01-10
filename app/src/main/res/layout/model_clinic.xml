@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#fff"
+    app:contentPadding="5dp"
+    app:cardCornerRadius="3dp"
+    android:elevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="@color/teal_200">
+
+        <!-- Clinic Name -->
+        <TextView
+            android:id="@+id/clinicName"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:text="Clinic Name"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <!-- Clinic Location -->
+        <TextView
+            android:id="@+id/clinicLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <!-- Clinic Operating Time -->
+        <TextView
+            android:id="@+id/clinicTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operating Time"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

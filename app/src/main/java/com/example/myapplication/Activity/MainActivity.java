@@ -15,6 +15,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.myapplication.HospitalActivity;
+import com.example.myapplication.ListClinicsActivity;
 import com.example.myapplication.ListHospitalsActivity;
 import com.example.myapplication.MapsActivity;
 import com.example.myapplication.R;
@@ -110,6 +111,9 @@ public class MainActivity extends AppCompatActivity {
 
             if (item.getItemId() == R.id.clinics) {
                 Toast.makeText(MainActivity.this, "Clinics is clicked", Toast.LENGTH_SHORT).show();
+                Intent hospitalIntent = new Intent(getApplicationContext(), ListClinicsActivity.class);
+                startActivity(hospitalIntent);
+                finish();
             }
 
             if (item.getItemId() == R.id.pharmacy) {
